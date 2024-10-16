@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "CHEESEBURGA";
+  src: url("../fonts/CHEESEBURGA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BaronKuffner";
+  src: url("../fonts/Baron Kuffner.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/images/dog-background.svg"); /* Add your background image here */
+  background-size: cover;
+  position: fixed;
+}
+
+.container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient-text {
+  line-height: 200px;
+  text-align: center;
+  margin: 0px auto;
+  font-family: "CHEESEBURGA", sans-serif;
+  font-size: 8rem;
+  text-shadow: 10px 14px #000, 12px 12px #000, 4px 4px transparent, 0 4px transparent, 4px 0 transparent;
+  color: #7eff5e;
+  background: linear-gradient(180deg, #fff280 0%, #7eff5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  font-family: "CHEESEBURGA", sans-serif;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 1); /* Default text color */
+  background: rgba(24, 28, 39, 1);
+  padding: 4px 50px;
+  margin-bottom: 6%;
+}
+
+.highlight {
+  background: none; /* Remove background color */
+  background: linear-gradient(180deg, #FFF280 8.61%, #FFA800 36.76%);
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.content-box {
+  height: 700px;
+  background: radial-gradient(42.38% 44.19% at 50.14% 67.33%, #FFF280 0%, #FFC700 100%);
+  width: 100%;
+  height: 100vh;
+  top: -247.32px;
+  left: 34.26px;
+  gap: 0px;
+  border-radius: 40px;
+  opacity: 0px;
+  
+}
+
+
+.branch {
+  border-top-right-radius: 100px 20px; /* Inverted: changed to top-right */
+  border: 1px solid #000;
+  border-bottom: none; /* Inverted: bottom border removed */
+  height: 500px;
+  width: 200px;
+  position: relative;
+  border-left: none;
+}
+.branch:before,
+.branch:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -1px;
+}
+.branch:before {
+  height: 20px;
+  width: 100%;
+  width: calc(100% + 1px);
+  border-top-right-radius: 100px 20px; /* Inverted: top-right curve */
+  border-top: 1px solid #000; /* Inverted: added top border */
+  border-right: solid 1px #000;
+  bottom: -1px; /* Inverted: moved to the bottom */
+}
+.branch:after {
+  height: calc(100% - 18px);
+  border-left: 1px solid #000;
+  bottom: 19px; /* Inverted: placed at bottom */
+}

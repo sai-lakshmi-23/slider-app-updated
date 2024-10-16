@@ -1,0 +1,43 @@
+
+.dog-image-updated {
+    width: 600px;
+    height: -webkit-fill-available;;
+    margin-right: 20px;
+  }
+  
+  .dog-section-updated {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right-text {
+    font-size: 1.5rem;
+  }
+  
+  .dog-name-updated {
+    font-family: "CHEESEBURGA", sans-serif;
+    letter-spacing: 3px;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .slider-tip {
+    width: 10%;
+    height: 15px;
+    border-radius: 29px;
+    opacity: 0px;
+    background-color: rgba(255, 246, 161, 1);
+    margin: auto;
+  }
+  
+  .content-wrapper {
+    padding-top: 1.5rem;
+    background: linear-gradient(187deg, transparent 80%, #fff 20%), radial-gradient(42.38% 44.19% at 50.14% 67.33%, #FFF280 0%, #FFC700 100%);
+    scrollbar-width: none;
+    border-radius: 40px;
+  }
+  

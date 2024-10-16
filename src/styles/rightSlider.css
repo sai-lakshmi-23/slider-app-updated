@@ -1,0 +1,25 @@
+.scroll-button-updated {
+    background: rgba(53, 53, 53, 1);
+    box-shadow: 8px 9px 19px 0px rgba(0, 0, 0, 0.65);
+    border-radius: 0.8rem;
+    height: 4rem;
+    width: 2.5rem;  
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.right-scroll {
+    display: flex;
+    overflow-x: auto;
+    width: -webkit-fill-available;
+}
+
+.gallery-item-updated {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 250px;
+    border-radius: 1rem;
+    scroll-snap-align: start;
+}

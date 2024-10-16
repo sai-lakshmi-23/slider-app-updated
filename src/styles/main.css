@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+  height: 100vh; /* Ensure there is enough scrollable space */
+}
+
+.dog-history-updated {
+  max-width: 550px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.history-heading {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: hsl(30, 100%, 50%);
+}
+
+.tab-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  background-color: white;
+  border: none;
+  color: solid 2px black;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tab.active {
+  color: #ffd700;
+}
+
+/* Horizontal gallery for images/videos */
+.horizontal-gallery {
+  display: flex;
+  overflow-x: auto;
+
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.second-img {
+  height: 650px;
+  width: 1000px;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img5 {
+  width: 530px;
+}

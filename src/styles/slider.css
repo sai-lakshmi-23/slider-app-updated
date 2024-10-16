@@ -1,0 +1,35 @@
+.scrollable-slider {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  top: 50vh;
+
+  background-attachment: local;
+  border-radius: 40px 40px 0px 40px;
+  height: 90vh;
+  /* overflow-y: auto; */
+  z-index: 1;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  scrollbar-width: none;
+  background-color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  border-radius: 40px;
+}
+
+.head1-updated {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  font-family: "CHEESEBURGA", sans-serif;
+  margin: 1rem;
+  color: rgba(255, 168, 0, 1);
+}

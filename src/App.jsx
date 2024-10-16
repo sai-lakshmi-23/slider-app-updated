@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./styles/app.css"; // Import your CSS file
+import "./styles/home.css"
+import "./styles/slider.css"
+import "./styles/rightSlider.css"
+import Slider from "./components/Slider";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <div className="text-container">
+        <h1 className="gradient-text">WELCOME TO ALBAY WORLD</h1>
+        <div className="description">
+          <span className="highlight">
+            legendary Central Asian Shepherd Dog
+          </span>{" "}
+          meets a new-age adventure. <span className="highlight">Join us</span>{" "}
+          in celebrating the <span className="highlight">strength</span>,{" "}
+          <span className="highlight">loyalty</span>, and{" "}
+          <span className="highlight">heritage</span> of the Alabay breed.
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Slider />
+    </div>
+  );
+};
 
-export default App
+export default App;
